@@ -41,7 +41,7 @@ export default async function Post({ params }: { params: { postId: string } }) {
     // const pubDate = getFormattedDate(date)
 
     return (
-        <main className="prose prose-xl prose-slate dark:prose-invert  mx-auto  bg-white/30 backdrop-blur-md shadow-xl rounded-3xl h-auto w-[1100px] p-10">
+        <main className="prose prose-xl prose-slate dark:prose-invert  mx-auto  bg-white/30 backdrop-blur-md shadow-xl rounded-3xl h-auto w-[900px] p-10">
             <h1 className="text-3xl mt-4 mb-0">{title}</h1>
             <h1>Published on: {date}</h1>
             {/* <p className="mt-0">
@@ -49,7 +49,7 @@ export default async function Post({ params }: { params: { postId: string } }) {
             </p> */}
             <article>
                 <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-                <p>
+                <p className="bg-white/30 backdrop-blur-md shadow-xl rounded-3xl p-2 w-[200px] font-semibold flex items-center justify-center mt-5">
                     <Link href="/">← Back to home</Link>
                 </p>
             </article>
