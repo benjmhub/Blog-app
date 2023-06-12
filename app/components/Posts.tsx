@@ -16,7 +16,7 @@ export default function Posts() {
                 {posts.map((post) => {
                   return(
                     <>
-                    <div className='bg-white/30 backdrop-blur-md shadow-xl rounded-3xl p-5 h-[200px] w-[300px]'>
+                    <div className='bg-white/30 backdrop-blur-md shadow-xl rounded-3xl p-5 h-auto w-[300px]'>
                       <h1 className='font-semibold text-xl'>{post.id}</h1>
                     <ListItem key={post.id} post={post} />
                     </div>
