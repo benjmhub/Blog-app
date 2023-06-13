@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       xxsm: '320px',
@@ -29,9 +30,18 @@ module.exports = {
         'primary':'#E0C3FC',
         'secondary':'#8EC5FC',
         'resbg': '#808080',
-        'navbarcolor':'#393E46'
+        'navbarcolor':'#393E46',
+        Darkmode:{
+          'primary':'#E0C3FC',
+          'secondary':'#8EC5FC',
+          'resbg': '#808080',
+          'navbarcolor':'#393E46',
+        }
+
       }
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }
