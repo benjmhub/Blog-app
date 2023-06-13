@@ -1,6 +1,10 @@
+'use client'
+
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
+// import Provider from './components/Provider'
+import {ThemeProvider} from 'next-themes'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,10 +19,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="bg-gradient-to-r from-secondary to-primary">
-      <Navbar/>
+    <html className='darker' lang="en">
+      <body className="darker">
+        <ThemeProvider>
+        <Navbar/>
         {children}
+        </ThemeProvider>
       </body>
     </html>
   )
