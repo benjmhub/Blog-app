@@ -11,7 +11,7 @@ export default function Posts() {
     <>
     <div className='h-screen'>
     <section className="mt-6 lg:mx-auto md:mx-10 xxsm:mx-8 lg:w-[1000px]">
-            <h2 className="text-4xl font-bold dark:text-white/90">Blog</h2>
+            <h2 className="text-4xl font-bold">Blog</h2>
             <ul className='flex md:flex-row xxsm:flex-col gap-5 mt-5'>
                 {posts.map((post) => {
                   return(
