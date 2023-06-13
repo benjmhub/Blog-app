@@ -1,5 +1,3 @@
-'use client'
-
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
@@ -19,12 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className='darker' lang="en">
-      <body className="darker">
-        <ThemeProvider>
+    <html lang="en">
+      <body className='bg-gradient-to-r from-Darkmode-primary to-Darkmode-secondary'>
         <Navbar/>
         {children}
-        </ThemeProvider>
       </body>
     </html>
   )
