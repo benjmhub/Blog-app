@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className='bg-gradient-to-r from-Darkmode-primary to-Darkmode-secondary'>
         <Navbar/>
+        <div className='z-10'>
         {children}
+        </div>
       </body>
     </html>
   )
